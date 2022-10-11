@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "운명 타일 데이터",
+    "description": "운명 타일에 대한 데이터를 검증하기 위해 작성된 스키마입니다.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "타일의 이름입니다."
+        },
+        "option": {
+            "type": "array",
+            "description": ""
+        }
+    },
+    "required": [
+        "name",
+        "option"
+    ]
+}

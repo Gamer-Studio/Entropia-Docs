@@ -7,13 +7,8 @@
         "id": "166711f1140c31d0",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Story/이계/평행세계 - 아이푸토 (Aiputo).md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -79,7 +74,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Story/이계/평행세계 - 아이푸토 (Aiputo).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +90,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Story/이계/평행세계 - 아이푸토 (Aiputo).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,9 +111,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Story/이계/평행세계 - 아이푸토 (Aiputo).md"
-              }
+              "state": {}
             }
           },
           {
@@ -140,8 +131,8 @@
   },
   "active": "2e6f52ca2c8e1db4",
   "lastOpenFiles": [
-    "Story/종족과 집단/회귀종.md",
     "Story/이계/평행세계 - 아이푸토 (Aiputo).md",
+    "Story/종족과 집단/회귀종.md",
     "Story/Story Linker.md",
     "Story/종족과 집단/미리내.md",
     "Story/종족과 집단/뒤틀린 종족.md",
