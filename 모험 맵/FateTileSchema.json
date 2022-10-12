@@ -22,6 +22,7 @@
                         "type": "array",
                         "description": "해당 선택지를 선택했을 시 발동되는 기능입니다. 여러 기능을 설정할 수 있으며, 설정한 순서대로 발동됩니다.",
                         "items": {
+                            "uniqueItems": true
                         }
                     },
                     "direction": {
@@ -40,7 +41,6 @@
                 },
                 "required": [
                     "detail",
-                    "function",
                     "direction"
                 ]
             }
