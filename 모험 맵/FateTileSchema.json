@@ -12,31 +12,38 @@
             "type": "array",
             "description": "타일 진입시 유저가 선택할 수 있는 선택지입니다. 최소 1가지에서 최대 6가지까지 가능합니다.",
             "minItems": 1,
-            "properties": {
-                "description": {
-                    "type": "string",
-                    "description": "선택지의 명칭입니다."
+            "items": {
+                "description": "선택지입니다.",
+                "properties": {
+                    "detail": {
+                        "description": "유저에게 보여지는 선택지의 내용입니다."
+                    },
+                    "function": {
+                        "type": "array",
+                        "description": "해당 선택지를 선택했을 시 발동되는 기능입니다. 여러 기능을 설정할 수 있으며, 설정한 순서대로 발동됩니다.",
+                        "items": {
+                        }
+                    },
+                    "direction": {
+                        "type": "array",
+                        "description": "해당 선택지를 선택했을시 나아갈 방향입니다. 여러 방향(1~6)을 설정할 수 있으며, 여러 방향이 설정됬을시 해당 방향들 중 무작위 하나로 선택됩니다.",
+                        "minItems": 1,
+                        "maxItems": 6,
+                        "items": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 6
+                        },
+                        "uniqueItems": true,
+                        "default": 1
+                    }
                 },
-                "function": {
-                    "type": "array",
-                    "description": "해당 선택지를 선택했을 시 발동되는 기능입니다. 여러 기능을 설정할 수 있으며, 설정한 순서대로 발동됩니다.",
-                    "contains": true,
-                    "properties": {}
-                },
-                "direction": {
-                    "type": "array",
-                    "description": "해당 선택지를 선택했을시 나아갈 방향입니다. 여러 방향을 설정할 수 있으며, 여러 방향이 설정됬을시 해당 방향들 중 무작위 하나로 선택됩니다.",
-                    "minItems": 1,
-                    "maxItems": 6,
-                    "pattern": "[123456]",
-                    "default": 1
-                }
-            },
-            "required": [
-                "description",
-                "function",
-                "direction"
-            ]
+                "required": [
+                    "detail",
+                    "function",
+                    "direction"
+                ]
+            }
         }
     },
     "required": [
